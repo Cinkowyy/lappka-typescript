@@ -1,23 +1,25 @@
-import React, {useState} from 'react';
-import './FormInput.scss';
+import React, { useState } from "react";
 
 interface inputProps {
-    icon: string, //SVG Image Path
-    type: string,
-    placeholder: string
+  icon: string; //SVG Image Path
+  type: string;
+  placeholder: string;
 }
 
-const FormInput:React.FC<inputProps> = ({icon, type, placeholder}) => {
+const FormInput: React.FC<inputProps> = ({ icon, type, placeholder }) => {
+  const [isFocused, setIsFocused] = useState(false);
 
-    const [isFocused, setIsFocused] = useState(false);
-
-
-    return (
-        <div className={`input-wrapper ${isFocused?'focused':''}`}>
-            <img src={icon} alt={placeholder}/>
-            <input type={type} placeholder={placeholder} onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)}/>
-        </div>
-    );
-}
+  return (
+    <div className={`input-wrapper ${isFocused ? "focused" : ""}`}>
+      <img src={icon} alt={placeholder} />
+      <input
+        type={type}
+        placeholder={placeholder}
+        onFocus={() => setIsFocused(true)}
+        onBlur={() => setIsFocused(false)}
+      />
+    </div>
+  );
+};
 
 export default FormInput;

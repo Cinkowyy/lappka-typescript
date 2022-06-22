@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import FormInput from "../../components/FormInput/FormInput";
 import UnderlinedHeading from "../../components/UnderlinedHeading/UnderlinedHeading";
 import logo from "../../img/logo.svg";
 import userIcon from "../../img/user-icon.svg";
 import passwdIcon from "../../img/password-icon.svg";
-import "./Login.scss";
 import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
 import LoginMethods from "../../components/LoginMethods/LoginMethods";
 import { useNavigate } from "react-router";

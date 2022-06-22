@@ -1,28 +1,26 @@
-@import "../../variables";
-
 .methods-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 1em;
-    font-weight: 700;
-    font-size: .875em;
-    color: $grey-text;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1em;
+  font-weight: 700;
+  font-size: 0.875em;
+  color: $grey-text;
 }
 
 .images {
-    display: flex;
-    column-gap: .9em;
+  display: flex;
+  column-gap: 0.9em;
 
-    img {
-        cursor: pointer;
-        filter: drop-shadow(-4px 4px 6px rgba(0, 0, 0, 0.1));
-        max-height: 3em;
-    }
+  img {
+    cursor: pointer;
+    filter: drop-shadow(-4px 4px 6px rgba(0, 0, 0, 0.1));
+    max-height: 3em;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .methods-wrapper .images{
-        column-gap: .6em;
-    }
+  .methods-wrapper .images {
+    column-gap: 0.6em;
+  }
 }

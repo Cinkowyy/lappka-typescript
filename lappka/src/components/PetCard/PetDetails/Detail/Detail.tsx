@@ -1,19 +1,17 @@
-import React from 'react';
-
-import './Detail.scss';
+import React from "react";
 
 interface detailProps {
-    value: string,
-    name: string
+  value: string;
+  name: string;
 }
 
-const Detail:React.FC<detailProps> = ({value, name}) => {
-    return (
-        <div className='detail'>
-            <p className='detail-value'>{value}</p>
-            <p className='detail-name'>{name}</p>
-        </div>
-    );
-}
+const Detail: React.FC<detailProps> = ({ value, name }) => {
+  return (
+    <div className="detail">
+      <p className="detail-value">{value}</p>
+      <p className="detail-name">{name}</p>
+    </div>
+  );
+};
 
 export default Detail;

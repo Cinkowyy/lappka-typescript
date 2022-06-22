@@ -1,29 +1,27 @@
-@import "../../variables";
-
 .input-wrapper {
-    border: 1px solid $grey-text;
-    border-radius: .625em;
+  border: 1px solid $grey-text;
+  border-radius: 0.625em;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  padding: 1em;
+  column-gap: 1em;
+  margin-bottom: 1em;
+
+  img {
+    max-height: 1.8em;
+  }
+
+  &.focused {
+    border-color: $primary-green;
+    border-width: 2px;
+    padding: calc(1em - 1px);
+  }
+
+  input {
+    border: none;
+    outline: none;
     width: 100%;
-    display: flex;
-    overflow: hidden;
-    padding: 1em;
-    column-gap: 1em;
-    margin-bottom: 1em;
-
-    img {
-        max-height: 1.8em;
-    }
-
-    &.focused {
-        border-color: $primary-green;
-        border-width: 2px;
-        padding: calc(1em - 1px);
-    }
-
-    input {
-        border: none;
-        outline: none;
-        width: 100%;
-        font-size: .875em;
-    }
+    font-size: 0.875em;
+  }
 }

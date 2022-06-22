@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router";
-import "./App.scss";
+import "./main.scss";
 import Login from "./pages/Login/Login";
 import Panel from "./pages/Panel/Panel";
 

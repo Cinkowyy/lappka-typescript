@@ -1,7 +1,5 @@
-@import "../../variables";
-
 .sidebar {
-  background-color: #FFF;
+  background-color: #fff;
   width: $sidebar-width;
   display: flex;
   flex-direction: column;
@@ -15,7 +13,7 @@
   nav {
     padding: 1.5em 0;
     height: 75%;
-    border-top: 1px solid #F4F7FE;
+    border-top: 1px solid #f4f7fe;
   }
 
   a {
@@ -30,15 +28,15 @@
       background-color: $primary-green;
 
       p {
-        color: #FFF;
+        color: #fff;
       }
 
       path {
-        fill: #FFF;
+        fill: #fff;
       }
 
       ellipse {
-        stroke: #FFF
+        stroke: #fff;
       }
     }
   }
@@ -48,11 +46,11 @@
   margin: 0 2.4em 1em 2.4em;
   display: flex;
   align-items: center;
-  padding: .875em;
-  column-gap: .875em;
-  border-radius: .35rem;
+  padding: 0.875em;
+  column-gap: 0.875em;
+  border-radius: 0.35rem;
 
-  &>* {
+  & > * {
     cursor: pointer;
   }
 

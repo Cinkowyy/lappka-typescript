@@ -1,7 +1,6 @@
 import React from "react";
-import { NavLink, Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
-import "./Sidebar.scss";
 import logo from "../../img/logo.svg";
 import OptionLink from "./OptionLink";
 import DashboardIcon from "../../img/SvgComponents/DashboardIcon";
