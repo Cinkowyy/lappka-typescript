@@ -1,0 +1,68 @@
+@import "../../variables";
+
+.sidebar {
+  background-color: #FFF;
+  width: $sidebar-width;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
+  .logo {
+    width: 60%;
+    margin: 1em 2.4em 1.3em 2.4em;
+  }
+
+  nav {
+    padding: 1.5em 0;
+    height: 75%;
+    border-top: 1px solid #F4F7FE;
+  }
+
+  a {
+    cursor: initial;
+    text-decoration: none;
+  }
+
+  a.active {
+    text-decoration: none;
+
+    .link {
+      background-color: $primary-green;
+
+      p {
+        color: #FFF;
+      }
+
+      path {
+        fill: #FFF;
+      }
+
+      ellipse {
+        stroke: #FFF
+      }
+    }
+  }
+}
+
+.link {
+  margin: 0 2.4em 1em 2.4em;
+  display: flex;
+  align-items: center;
+  padding: .875em;
+  column-gap: .875em;
+  border-radius: .35rem;
+
+  &>* {
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 1em;
+    font-weight: 700;
+    color: $grey-text;
+  }
+
+  path {
+    height: 1.1em;
+  }
+}

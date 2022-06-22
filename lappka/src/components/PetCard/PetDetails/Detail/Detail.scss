@@ -1,0 +1,19 @@
+.detail {
+  padding: .56em 1em ;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: .75em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-value {
+  font-size: .85em;
+  font-weight: 700;
+}
+
+.detail-name {
+  font-size: .75em;
+  color: #CCCCCC;
+}

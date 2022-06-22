@@ -1,0 +1,22 @@
+@import "../../../variables";
+
+.dashboard {
+  width: 100%;
+  height: 100%;
+  padding: 1em $content-padding-right 8em $content-padding-left;
+  overflow-y: scroll;
+}
+
+.dashboard-title {
+  color: $lighter-black;
+  font-size: 1.25em;
+  margin: .4em 0;
+}
+
+.dashboard-content {
+  padding: 1em 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: $content-padding-right;
+  row-gap: 4.375em;
+}

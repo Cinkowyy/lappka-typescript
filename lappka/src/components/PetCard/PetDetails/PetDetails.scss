@@ -1,0 +1,31 @@
+.pet-details {
+  padding: .375em 1.75em 2.375em 1.75em ;
+  color: #616161;
+
+  .basic {
+    display: flex;
+    justify-content: space-between;
+
+    .pet-name {
+      font-weight: 700;
+      font-size: 1.875em;
+    }
+
+    .pet-breed {
+      font-size: 1em;
+    }
+  }
+
+  .specific {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: .75em;
+    margin: 1em 0 1.5em 0;
+  }
+
+  .btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
