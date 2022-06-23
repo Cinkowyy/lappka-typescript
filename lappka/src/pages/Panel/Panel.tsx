@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Route, Routes } from "react-router";
+import { Outlet, Route, Routes } from "react-router";
 
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Topbar from "../../components/Topbar/Topbar";
@@ -25,15 +25,7 @@ const Panel = () => {
           username="Robert G."
           company="Nazwa Firmy"
         />
-        <Routes>
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/wiadomosci" element={<Other text={"ą wiadomości"} />} />
-          <Route path="/karty" element={<Other text={"ą karty zwierząt"} />} />
-          <Route
-            path="/wolontariat"
-            element={<Other text={"zie wolontariat"} />}
-          />
-        </Routes>
+        <Outlet />
       </div>
     </div>
   );

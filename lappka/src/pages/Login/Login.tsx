@@ -26,7 +26,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const navigateToPanel = () => {
-    navigate("/panel");
+    navigate("/panel/dashboard");
   };
 
   return (
