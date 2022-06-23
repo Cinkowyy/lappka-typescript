@@ -1,0 +1,35 @@
+.btn {
+  cursor: pointer;
+  letter-spacing: 0.5px;
+
+  &.primary {
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background-color: $primary-green;
+    width: 100%;
+    padding: 1.2em 0;
+    border-radius: 0.625em;
+    text-transform: uppercase;
+    margin: 2.6em 0;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+    filter: drop-shadow(-4px 4px 10px rgba(0, 0, 0, 0.15));
+
+    &:hover {
+      color: $primary-green;
+      border-color: $primary-green;
+      background-color: #fff;
+    }
+  }
+
+  &.details {
+    font-size: 1em;
+    font-weight: 500;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #0de18c;
+    padding: 1.1em 4.7em;
+    border-radius: 1em;
+  }
+}

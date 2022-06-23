@@ -4,7 +4,7 @@ import UnderlinedHeading from "../../components/UnderlinedHeading/UnderlinedHead
 import logo from "../../img/logo.svg";
 import userIcon from "../../img/user-icon.svg";
 import passwdIcon from "../../img/password-icon.svg";
-import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
+import PrimaryButton from "../../components/Button/Button";
 import LoginMethods from "../../components/LoginMethods/LoginMethods";
 import { useNavigate } from "react-router";
 
@@ -46,7 +46,7 @@ const Login = () => {
             </div>
             <p className="forgot-pass">Zapomniałeś hasła?</p>
           </div>
-          <PrimaryButton text="Zaloguj się" />
+          <PrimaryButton text="Zaloguj się" type="primary" />
           <LoginMethods />
         </form>
       </div>
