@@ -7,17 +7,10 @@ interface inputProps {
 }
 
 const FormInput: React.FC<inputProps> = ({ icon, type, placeholder }) => {
-  const [isFocused, setIsFocused] = useState(false);
-
   return (
-    <div className={`input-wrapper ${isFocused ? "focused" : ""}`}>
+    <div className={"input-wrapper"}>
       <img src={icon} alt={placeholder} />
-      <input
-        type={type}
-        placeholder={placeholder}
-        onFocus={() => setIsFocused(true)}
-        onBlur={() => setIsFocused(false)}
-      />
+      <input type={type} placeholder={placeholder} />
     </div>
   );
 };

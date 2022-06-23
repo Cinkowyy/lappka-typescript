@@ -7,7 +7,6 @@ interface linkProps {
 }
 
 const OptionLink: React.FC<linkProps> = ({ onClick, icon, text }) => {
-  console.log(typeof icon);
   return (
     <div className="link" onClick={onClick}>
       {icon}

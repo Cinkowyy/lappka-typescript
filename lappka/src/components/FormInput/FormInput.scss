@@ -12,7 +12,7 @@
     max-height: 1.8em;
   }
 
-  &.focused {
+  &:focus-within {
     border-color: $primary-green;
     border-width: 2px;
     padding: calc(1em - 1px);
