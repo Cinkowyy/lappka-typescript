@@ -1,16 +1,6 @@
 import React from "react";
 import PetDetails from "./PetDetails/PetDetails";
-
-interface cardProps {
-  image: string; //PNG Image Url
-  name: string;
-  breed: string;
-  genderIcon: string; //SVG Image Url
-  age: string;
-  color: string;
-  weight: string;
-  sterilization: string;
-}
+import { cardProps } from "interfaces";
 
 const PetCard: React.FC<cardProps> = (props) => {
   return (

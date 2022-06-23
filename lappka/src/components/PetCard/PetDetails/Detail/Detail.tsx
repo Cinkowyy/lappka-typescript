@@ -1,15 +1,12 @@
 import React from "react";
 
-interface detailProps {
-  value: string;
-  name: string;
-}
+import { detailProps } from "interfaces";
 
-const Detail: React.FC<detailProps> = ({ value, name }) => {
+const Detail: React.FC<detailProps> = ({ detailName, value }) => {
   return (
     <div className="detail">
       <p className="detail-value">{value}</p>
-      <p className="detail-name">{name}</p>
+      <p className="detail-name">{detailName}</p>
     </div>
   );
 };

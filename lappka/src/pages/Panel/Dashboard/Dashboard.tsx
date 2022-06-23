@@ -1,7 +1,12 @@
-import PetCard from "../../../components/PetCard/PetCard";
+import PetCard from "components/PetCard/PetCard";
+import PetDetails from "components/PetCard/PetDetails/PetDetails";
 
-import moniakImage from "../../../img/moniak.png";
-import genderIcon from "../../../img/male-icon.svg";
+import { cardProps } from "interfaces";
+
+import moniakImage from "img/moniak.png";
+import genderIcon from "img/male-icon.svg";
+import { useEffect } from "react";
+import { useState } from "react";
 
 function Dashboard() {
   const petData = {
@@ -9,22 +14,45 @@ function Dashboard() {
     name: "Moniak",
     breed: "Kundelek",
     genderIcon: genderIcon,
-    age: "1 rok",
-    color: "Czarny",
-    weight: "1.2 kg",
-    sterilization: "tak",
+    details: [
+      {
+        detailName: "Wiek",
+        value: "1 rok",
+      },
+      {
+        detailName: "Kolor",
+        value: "Czarny",
+      },
+      {
+        detailName: "Waga",
+        value: "1.2kg",
+      },
+      {
+        detailName: "Sterylizacja",
+        value: "Tak",
+      },
+    ],
   };
+
+  const [petsData, setPetsData] = useState<cardProps[]>([]);
+
+  useEffect(() => {
+    const pets: cardProps[] = [];
+
+    for (let i = 0; i < 6; i++) {
+      pets.push(petData);
+    }
+
+    setPetsData(pets);
+  }, []);
 
   return (
     <div className="dashboard">
       <p className="dashboard-title">Zwierzęta w schronisku</p>
       <div className="dashboard-content">
-        <PetCard {...petData} />
-        <PetCard {...petData} />
-        <PetCard {...petData} />
-        <PetCard {...petData} />
-        <PetCard {...petData} />
-        <PetCard {...petData} />
+        {petsData.map((pet) => {
+          return <PetCard {...pet} />;
+        })}
       </div>
     </div>
   );
