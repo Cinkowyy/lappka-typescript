@@ -3,7 +3,7 @@ export interface detailProps {
   value: string;
 }
 
-export interface cardProps {
+export interface petDataType {
   image: string; //PNG Image Url
   name: string;
   breed: string;

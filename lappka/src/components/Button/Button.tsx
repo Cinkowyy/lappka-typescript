@@ -2,11 +2,11 @@ import React from "react";
 
 interface buttonProps {
   text: string;
-  type: string;
+  variant: "primary" | "details";
 }
 
-const PrimaryButton: React.FC<buttonProps> = ({ text, type }) => {
-  return <button className={`btn ${type}`}>{text}</button>;
+const PrimaryButton: React.FC<buttonProps> = ({ text, variant }) => {
+  return <button className={`btn btn-${variant}`}>{text}</button>;
 };
 
 export default PrimaryButton;

@@ -3,9 +3,20 @@ import React from "react";
 import Detail from "./Detail/Detail";
 import Button from "../../Button/Button";
 
-import { cardProps } from "interfaces";
+interface detailProps {
+  detailName: string;
+  value: string;
+}
 
-const PetDetails: React.FC<cardProps> = (props) => {
+interface petDataProps {
+  image: string; //PNG Image Url
+  name: string;
+  breed: string;
+  genderIcon: string; //SVG Image Url
+  details: detailProps[];
+}
+
+const PetDetails: React.FC<petDataProps> = (props) => {
   return (
     <div className="pet-details">
       <div className="basic">
@@ -22,7 +33,7 @@ const PetDetails: React.FC<cardProps> = (props) => {
         })}
       </div>
       <div className="btn-wrapper">
-        <Button text="Edytuj" type="details" />
+        <Button text="Edytuj" variant="details" />
       </div>
     </div>
   );

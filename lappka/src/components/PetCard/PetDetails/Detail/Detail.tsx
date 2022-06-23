@@ -1,6 +1,9 @@
 import React from "react";
 
-import { detailProps } from "interfaces";
+interface detailProps {
+  detailName: string;
+  value: string;
+}
 
 const Detail: React.FC<detailProps> = ({ detailName, value }) => {
   return (

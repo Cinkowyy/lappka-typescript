@@ -1,6 +1,6 @@
 import Other from "components/Other/Other";
 import Dashboard from "pages/Panel/Dashboard/Dashboard";
-import { Navigate, Route, Routes } from "react-router";
+import { Route, Routes } from "react-router";
 import "./main.scss";
 import Login from "./pages/Login/Login";
 import Panel from "./pages/Panel/Panel";

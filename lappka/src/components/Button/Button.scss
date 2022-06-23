@@ -2,7 +2,7 @@
   cursor: pointer;
   letter-spacing: 0.5px;
 
-  &.primary {
+  &-primary {
     font-size: 1em;
     font-weight: 700;
     color: #fff;
@@ -23,7 +23,7 @@
     }
   }
 
-  &.details {
+  &-details {
     font-size: 1em;
     font-weight: 500;
     border: 1px solid transparent;
